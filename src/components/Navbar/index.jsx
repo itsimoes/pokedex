@@ -54,7 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function Navbar({pokemonFilter}) {
   return (
     <Box sx={{ flexGrow: 1, marginBottom: "2em" }}>
-      <AppBar position="static" sx={{ backgroundColor: "turquoise" }}>
+      <AppBar position="static" sx={{ backgroundColor: "#8ed1fc" }}>
         <Toolbar>
           <Box display="flex" justifyContent="space-between" width="100%">
 
@@ -63,9 +63,10 @@ export default function Navbar({pokemonFilter}) {
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
-            <StyledInputBase
+            <StyledInputBase            
               placeholder="Search…"
               inputProps={{ "aria-label": "search" }}
+              
               />
           </Search>
               </Box>
