@@ -1,9 +1,10 @@
 import React from 'react'
-import PokemonList from '../components/PokemonList'
+import PokedexAnimation from '../components/PokedexAnimation'
+// import PokemonList from '../components/PokemonList'
 
 const Home = () => {
   return (
-    <PokemonList />
+    <PokedexAnimation />
   )
 }
 
