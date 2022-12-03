@@ -6,6 +6,7 @@ import PokemonCard from "../components/PokemonCard";
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
+import { Skeletons } from "../components/Skeletons";
 
 const Home = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -42,7 +43,8 @@ const Home = () => {
       <Navbar pokemonFilter={pokemonFilter} />
       <Container maxWidth="false">
         <Grid container spacing={3}>
-          {pokemons.map((pokemon, key) => (
+          {pokemons.length === 0 ? <Skeletons/> : 
+          pokemons.map((pokemon, key) => (
             <Grid item xs={12} sm={4} md={2} key={key}>
               <PokemonCard
                 name={pokemon.data.name}
@@ -51,6 +53,8 @@ const Home = () => {
               />
             </Grid>
           ))}
+          
+          
         </Grid>
       </Container>
     </div>
