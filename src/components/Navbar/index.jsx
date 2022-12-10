@@ -8,19 +8,25 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
+import Logo from "../../assets/pokemon-logo.png";
 
 const Search = styled("div")(({ theme }) => ({
+  display: "flex",
   position: "relative",
   borderRadius: theme.shape.borderRadius,
   backgroundColor: alpha(theme.palette.common.white, 0.15),
   "&:hover": {
     backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
+  "&:active": {
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
+  },
   marginLeft: 0,
   width: "100%",
-  [theme.breakpoints.up("sm")]: {
+  [theme.breakpoints.up("xs")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
+    
   },
 }));
 
@@ -42,10 +48,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
     transition: theme.transitions.create("width"),
     width: "100%",
-    [theme.breakpoints.up("sm")]: {
-      width: "12ch",
+    [theme.breakpoints.up("xs")]: {
+      width: "0ch",
       "&:focus": {
-        width: "20ch",
+        width: "20ch",        
       },
     },
   },
@@ -58,7 +64,7 @@ export default function Navbar({pokemonFilter}) {
         <Toolbar>
           <Box display="flex" justifyContent="space-between" width="100%">
 
-            <Box component="img" src="/assets/pokemon-logo.png" height="3em"/>          
+            <Box component="img" src={ Logo } height="3em"/>          
           <Search onChange={(e) => pokemonFilter(e.target.value)}>
             <SearchIconWrapper>
               <SearchIcon />
