@@ -2,31 +2,15 @@ import { Box } from "@mui/system";
 import React from "react";
 import { Link } from 'react-router-dom';
 import { ReactComponent as PokedexImg } from '../../assets/svg1.svg';
+import './style.css'
 
 const PokedexAnimation = () => {
   return (
-    <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      minHeight="100vh"
-      style={{
-        backgroundImage: "linear-gradient(red 50% ,white 50%)"
-      }}
-    >
-      <Link to="/pokemon-list">
-        <svg>
-          <PokedexImg />
-        </svg>
-        {/* <img
-          src={PokedexImg}          
-          width="20%"
-          style={{
-            boxShadow: "10px 10px 10px black",
-            borderRadius: "10%",
-            backgroundColor: "black"
-          }}
-        /> */}
+    <Box className="box">
+      <Link to="/pokemon-list">        
+            <svg className="drop-shadow" viewBox="0 0 100 100">
+              <PokedexImg />
+            </svg>          
       </Link>
     </Box>
   );

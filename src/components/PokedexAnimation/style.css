@@ -1,0 +1,19 @@
+.drop-shadow {
+    filter: drop-shadow(0px 0px 5px black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;        
+}
+
+.drop-shadow:hover {
+    filter: drop-shadow(0px 0px 8px blue);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(red 50% ,white 50%);
+}
