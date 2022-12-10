@@ -9,6 +9,7 @@ import InputBase from "@mui/material/InputBase";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import Logo from "../../assets/pokemon-logo.png";
+import { Link } from 'react-router-dom';
 
 const Search = styled("div")(({ theme }) => ({
   display: "flex",
@@ -26,7 +27,7 @@ const Search = styled("div")(({ theme }) => ({
   [theme.breakpoints.up("xs")]: {
     marginLeft: theme.spacing(1),
     width: "auto",
-    
+
   },
 }));
 
@@ -51,31 +52,32 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
     [theme.breakpoints.up("xs")]: {
       width: "0ch",
       "&:focus": {
-        width: "20ch",        
+        width: "20ch",
       },
     },
   },
 }));
 
-export default function Navbar({pokemonFilter}) {
+export default function Navbar({ pokemonFilter }) {
   return (
     <Box sx={{ flexGrow: 1, marginBottom: "2em" }}>
       <AppBar position="static" sx={{ backgroundColor: "#8ed1fc" }}>
         <Toolbar>
           <Box display="flex" justifyContent="space-between" width="100%">
+            <Link to="/">
+              <Box component="img" src={Logo} height="3em" />
+            </Link>
+            <Search onChange={(e) => pokemonFilter(e.target.value)}>
+              <SearchIconWrapper>
+                <SearchIcon />
+              </SearchIconWrapper>
+              <StyledInputBase
+                placeholder="Search…"
+                inputProps={{ "aria-label": "search" }}
 
-            <Box component="img" src={ Logo } height="3em"/>          
-          <Search onChange={(e) => pokemonFilter(e.target.value)}>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase            
-              placeholder="Search…"
-              inputProps={{ "aria-label": "search" }}
-              
               />
-          </Search>
-              </Box>
+            </Search>
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
