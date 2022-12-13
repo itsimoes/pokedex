@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Flexo Light";
+  src: local("Flexo-Demi"),
+   url("./fonts/Flexo-Demi.ttf") format("truetype");
+  font-weight: normal;
+  }
