@@ -3,11 +3,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;        
+    height: 50vh;
+    -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .drop-shadow:hover {
     filter: drop-shadow(0px 0px 8px blue);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .box {
@@ -15,5 +19,5 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-image: linear-gradient(red 50% ,white 50%);
+    background-image: linear-gradient(red 50%, white 50%);
 }
