@@ -9,4 +9,8 @@
 
 
 - A seguir, algumas imagens da aplicacao:
-- 
+
+<img src="https://user-images.githubusercontent.com/7232098/207325372-a6709a39-f235-4384-821c-11a915ecf15e.png" width="50%" />
+
+
+
