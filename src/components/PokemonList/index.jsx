@@ -50,6 +50,7 @@ const PokemonList = () => {
                 name={pokemon.data.name}
                 image={pokemon.data.sprites.front_default}
                 types={pokemon.data.types}
+                id={pokemon.data.id}
               />
             </Grid>
           ))}
