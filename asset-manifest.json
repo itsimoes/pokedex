@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/pokedex/static/css/main.102198d4.css",
+    "main.js": "/pokedex/static/js/main.b0e18683.js",
+    "static/js/787.7e0b23c5.chunk.js": "/pokedex/static/js/787.7e0b23c5.chunk.js",
+    "static/media/pokemon-logo.png": "/pokedex/static/media/pokemon-logo.df1fd31f6c8961789913.png",
+    "static/media/Flexo-Demi.ttf": "/pokedex/static/media/Flexo-Demi.3665139649a4ec998167.ttf",
+    "static/media/svg1.svg": "/pokedex/static/media/svg1.42af82311d758c27fe58ac2515c652c7.svg",
+    "index.html": "/pokedex/index.html",
+    "main.102198d4.css.map": "/pokedex/static/css/main.102198d4.css.map",
+    "main.b0e18683.js.map": "/pokedex/static/js/main.b0e18683.js.map",
+    "787.7e0b23c5.chunk.js.map": "/pokedex/static/js/787.7e0b23c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.102198d4.css",
+    "static/js/main.b0e18683.js"
+  ]
+}
